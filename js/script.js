@@ -21,9 +21,13 @@ document.getElementById("pulsante-calcolo").addEventListener("click", function()
 
       var sconto = (costoTotale * 20) / 100;
 
-      if(inputCoupon.value === listaCoupon[i]) {
-        costoTotale = costoTotale - sconto;
+      for (var i = 0; i < listaCoupon.length; i++) {
+        if(inputCoupon.value === listaCoupon[i]) {
+          costoTotale = costoTotale - sconto;
+        }
       }
 
       costoTotaleHTML.innerText = costoTotale;
+
+
     });
