@@ -7,13 +7,11 @@ costoTotale = 0;
 var costoTotaleHTML = document.getElementById('price-output');
 var listaCoupon = ['1HRPLBNR', '1CSUBNJG', '1DRTBNHP', '1TXCJGTR'];
 var inputCoupon = document.getElementsByClassName('coupon')[0];
-var sconto = (costoTotale * 20) / 100;
+
 
 document.getElementById("pulsante-calcolo").addEventListener("click", function() {
 
       costoTotale = 0;
-
-
 
       for(var i = 0; i < costoIngrediente.length; i++) {
         if(costoIngrediente[i].checked) {
@@ -21,10 +19,11 @@ document.getElementById("pulsante-calcolo").addEventListener("click", function()
         }
       }
 
-      if(inputCoupon === listaCoupon[i]) {
+      var sconto = (costoTotale * 20) / 100;
+
+      if(inputCoupon.value === listaCoupon[i]) {
         costoTotale = costoTotale - sconto;
       }
-      // popolo elemento #total con il totale del mio ordine
 
       costoTotaleHTML.innerText = costoTotale;
     });
