@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container{
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container{
+  width: 800px;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl{
+  float: left;
+}
+
+.header{
+  height: 90px;
+  background-color: #fdbb40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+colore footer d33359

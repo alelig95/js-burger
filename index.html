@@ -6,31 +6,45 @@
     <title>Burger</title>
   </head>
   <body>
-    <h1>Create Your Burger</h1>
-    <input type="text" name="" value="" placeholder="Name Your Burger">
-    <div>ingredients</div>
-    <div class="ingredient-container">
-      <input type="checkbox" name="" value="8">cheese
-      <input type="checkbox" name="" value="5">egg
-      <input type="checkbox" name="" value="2">mustard
-      <input type="checkbox" name="" value="2">tomato
-      <input type="checkbox" name="" value="3">lattuce
-      <input type="checkbox" name="" value="2">ketchup
-    </div>
 
-    <input class='coupon' type="text" name="" value="" placeholder="1HPTJKNR">
+    <div class="main-container">
+      <div class="header">
+        <div class="container">
 
 
-    <button id="pulsante-calcolo" type="button" name="button">calculate</button>
 
-    <div class="your-price">
-      <div>Your Price:</div>
-      <div id="price-output">
+          <h1>Create Your Burger</h1>
+        </div>
+      </div>
+      <input id="name-burger" type="text" name="" value="" placeholder="Name Your Burger">
+      <div>ingredients</div>
+      <div class="ingredient-container">
+        <div class="group-a">
+          <input type="checkbox" name="" value="8">cheese
+          <input type="checkbox" name="" value="5">egg
+          <input type="checkbox" name="" value="2">mustard
+        </div>
+        <div class="group-b">
+          <input type="checkbox" name="" value="2">tomato
+          <input type="checkbox" name="" value="3">lattuce
+          <input type="checkbox" name="" value="2">ketchup
+        </div>
+      </div>
+
+      <input class='coupon' type="text" name="" value="" placeholder="Inserisci un coupon">
+
+
+      <button id="pulsante-calcolo" type="button" name="button">calculate</button>
+
+      <div class="your-price">
+        <div>Your Price:</div>
+        <div id="price-output">
+
+        </div>
 
       </div>
 
     </div>
-
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>
