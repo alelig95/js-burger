@@ -74,7 +74,7 @@ p{
   width: 40px;
 }
 
-input{
+.checkboxes input{
  visibility: hidden;
 }
 
@@ -104,11 +104,17 @@ label{
 .checkboxes input:checked + span:before {
   position: absolute;
   top: 50%;
-  left: -140%;
+  left: -145%;
   transform: translateY(-55%);
   z-index: 1;
-  content: "x";
+  content: "\f00c";
   font-size: 20px;
   font-weight: 900;
   color: black;
+}
+
+.coupon input{
+  border: none;
+  background-color: blue;
+
 }
