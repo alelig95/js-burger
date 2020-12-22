@@ -14,15 +14,6 @@
   width: 830px;
   margin: 0 auto;
 }
-.clearfix::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.fl{
-  float: left;
-}
 
 .header{
   height: 90px;
@@ -62,6 +53,10 @@ p{
 .ingredient-container{
   display: flex;
   justify-content: space-between;
+}
+
+.group-a, .group-b{
+  width: 600px;
 }
 
 .checkboxes{
@@ -124,14 +119,15 @@ label input{
   width: 600px;
   border-radius: 4px;
   margin-left: 5px;
+  height: 18px;
 }
 
-.button{
+.button-container{
  text-align: center;
  margin-top: 30px;
 }
 
-.button button{
+.button-container button{
   padding: 12px 22px;
   background-color: #fdbb40;
   color: #000;
@@ -143,5 +139,15 @@ label input{
 footer{
   background-color: #d33359;
   height: 90px;
-  margin-top: 150px;
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.your-price{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
 }
